@@ -1,0 +1,25 @@
+[
+    {
+        "name": "Martin",
+        "age": 41,
+        "sex": "M",
+        "icon": "uploads\/male_icon.jpeg"
+    },
+    {
+        "name": "Mitko",
+        "sex": "M",
+        "icon": "uploads\/male_icon.jpeg"
+    },
+    {
+        "name": "Mariyana",
+        "age": 37,
+        "sex": "F",
+        "icon": "uploads\/female_icon.jpeg"
+    },
+    {
+        "name": "Jessy",
+        "age": "17",
+        "sex": "F",
+        "icon": "uploads\/female_icon.jpeg"
+    }
+]
