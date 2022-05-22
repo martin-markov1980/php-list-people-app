@@ -4,9 +4,9 @@
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
-  $name = $_POST['name'] ? : 'Unknown';
-  $age = $_POST['age'] ? : 'Unknown';
-  $sex = $_POST['sex'] ? : 'Unknown';
+  $name = $_POST['name'];
+  $age = $_POST['age'];
+  $sex = $_POST['sex'];
   $target_dir = "uploads/";
   $target_file = $target_dir . $_FILES["icon"]["name"];
   move_uploaded_file($_FILES["icon"]["tmp_name"], $target_file);
@@ -18,11 +18,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     'icon' => $target_file
   ];
 
-  $people = get_people();
-
-  $people[] = $new_person;
-
-  save_people($people);
+  save_person($new_person);
 
   header("Location: /php");
 
