@@ -44,7 +44,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <input type="text" name="sex">
   </div>
   <div>
-    <label for="icon">Icon</label>
+    <label for="icon">Avatar</label>
     <input type="file" name="icon">
   </div>
   <button type="submit">Add Person</button>

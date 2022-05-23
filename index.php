@@ -2,11 +2,15 @@
 
 include './lib/functions.php';
 
-if ($_GET) {
-  $person_id = $_GET['id'];
-  $path = $_GET['path'];
-  delete_person_info($person_id, $path);
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+
+  $id = $_POST['id'];
+  $path = $_POST['path'];
+
+  delete_person_info($id, $path);
+
   header("Location: /php");
+
 }
 
 $people = get_people();
@@ -24,6 +28,7 @@ $people_count = count($people);
         <th>Name</th>
         <th>Age</th>
         <th>Details</th>
+        <th>Update</th>
         <th>Delete</th>
       </tr>
       </thead>
@@ -32,8 +37,13 @@ $people_count = count($people);
         <tr>
           <td><?php echo $person['name'] ? : 'Unknown'; ?></td>
           <td><?php echo $person['age'] ? : 'Unknown'?></td>
-          <td><a href="single-person.php?id=<?php echo $person['id']?>">Details</a></td>
-          <td><a href="/php?id=<?php echo $person['id']?>&path=<?php echo $person['icon']?>">Delete</a></td>
+          <td><a href="single-person.php?id=<?php echo $person['id']?>"><button>Details</button></a></td>
+          <td><a href="update-person.php?id=<?php echo $person['id']?>"><button>Update</button></a></td>
+          <form action="index.php" method="post">
+            <td><button type="submit">Delete</button></td>
+            <input type="hidden" name="id" value="<?php echo $person['id']?>">
+            <input type="hidden" name="path" value="<?php echo $person['icon']?>">
+          </form>
         </tr>
       <?php } ?>
       </tbody>

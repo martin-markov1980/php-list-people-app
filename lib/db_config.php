@@ -2,6 +2,6 @@
 
 return [
   'db_dns' => 'mysql:dbname=people;host=localhost',
-  'user_name' => 'root',
+  'user_dname' => 'root',
   'password' => null
 ];
