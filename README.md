@@ -13,6 +13,8 @@ How to setup the app locally:
  - You can use any local php environment to get the app running, in my case I was using XAMPP.
  - create database and make sure you are using the correct database details which you can find in the lib/db_config.php file 
  or just update the lib/db_config.php file with your newly created database details
- - In the root folder of the project you can find database called people.sql with two persons already added to it,
- you can immport that file into your database so you have some data to start with or just navigate to the Add Person page using the main menu and add
- your first person to the app.
+ - In the root folder of the project you can find database file called people.sql with two persons already added to it,
+ please import that file to your database so you have all the necessary database tables and structure ready for use.
+ 
+ Please note that if you have any path issues using the navigation menu, 
+ you may want to copy all the files inside of php-list-people-app folder and move them to the root of your local environment. 
