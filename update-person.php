@@ -31,7 +31,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
   update_person($data);
 
-  header("Location: /php");
+  header("Location: /");
 
 }
 

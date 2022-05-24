@@ -20,7 +20,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
   save_person($new_person);
 
-  header("Location: /php");
+  header("Location: /");
 
 }
 

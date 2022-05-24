@@ -9,7 +9,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
   delete_person_info($id, $path);
 
-  header("Location: /php");
+  header("Location: /");
 
 }
 
