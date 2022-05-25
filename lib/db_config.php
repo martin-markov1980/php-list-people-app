@@ -1,7 +1,7 @@
 <?php
 
 return [
-  'db_dns' => 'mysql:dbname=people;host=localhost',
-  'user_name' => 'root',
-  'password' => null
+  'db_dns' => 'mysql:dbname=db;host=db',
+  'user_name' => 'db',
+  'password' => 'db'
 ];
