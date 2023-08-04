@@ -1,6 +1,6 @@
 # php-list-people-app
 
-Motivation:
+**Motivation**:</br>
 After completing the procedural PHP for beginners course at https://drupalize.me/topic/php
 I have decided to put in practice everything I have learned and build this CRUD PHP people list app.
 Please note that there is not much of CSS styling in the app as my main focus was the PHP functionality.
