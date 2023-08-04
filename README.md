@@ -11,10 +11,10 @@ Create person, update person, see person details and delete person.
 How to setup the app locally:
  - Make sure you have Docker and DDEV installed https://ddev.readthedocs.io/en/stable/
  - Clone the repo to your local
- - cd to the php-list-people-app folder and run:
+ - cd to the php-list-people-app folder and run:</br>
  ddev start
- - import the database with:
+ - to use ready database cd to the root folder and import the database with:</br>
  ddev import-db --src=people.sql
- - to open the app in your browser run:
+ - to open the app in your browser run:</br>
  ddev launch
  
